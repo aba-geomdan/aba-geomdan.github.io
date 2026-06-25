@@ -232,16 +232,16 @@
   .cmp-normal .cmp-head { color:var(--ink-soft); }
   .cmp-us .cmp-head { color:#fff; }
   .cmp-col ul { list-style:none; display:flex; flex-direction:column; gap:16px; }
-  .cmp-col li { display:flex; align-items:flex-start; gap:12px; font-size:15px; line-height:1.55; }
+  .cmp-col li { display:flex; align-items:flex-start; gap:12px; font-size:15px; line-height:1.7; letter-spacing:-0.01em; }
   .cmp-normal li { color:var(--ink-soft); }
   .cmp-us li { color:#fff; }
   .ci { flex-shrink:0; width:26px; height:26px; border-radius:50%; display:grid; place-items:center; margin-top:1px; }
   .ci.x { background:#F3E3E7; color:#C98A99; }
   .ci.o { background:rgba(255,255,255,0.25); color:#fff; }
   .cmp-normal li b { color:var(--ink); }
-  .cmp-us li b { color:#fff; font-weight:800; }
+  .cmp-us li b { color:#fff; font-weight:700; }
   .whyus-note { margin-top:32px; text-align:center; font-size:18px; font-family:'Jua'; color:var(--pink-deep); line-height:1.6; }
-  @media (max-width:860px){ .compare{grid-template-columns:1fr;} .cmp-col{padding:26px 22px;} .cmp-col li{font-size:14.5px; line-height:1.5; word-break:keep-all; text-align:left;} }
+  @media (max-width:860px){ .compare{grid-template-columns:1fr;} .cmp-col{padding:26px 22px;} .cmp-col li{font-size:14.5px; line-height:1.7; text-align:left;} }
 
   /* PROGRAMS */
   .prog-grid { margin-top: 44px; display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
@@ -591,19 +591,19 @@
         <div class="cmp-col cmp-normal">
           <div class="cmp-head">일반적인 경우</div>
           <ul>
-            <li><span class="ci x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>언어는 언어센터, 행동은 행동센터로 <b>따로</b> 다녀야 함</li>
-            <li><span class="ci x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>기관마다 보는 방향이 달라 <b>중재가 분절</b>됨</li>
-            <li><span class="ci x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>부모가 양쪽 내용을 <b>직접 조율</b>해야 함</li>
+            <li><span class="ci x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>언어센터·행동센터를 <b>따로</b> 다녀야 함</li>
+            <li><span class="ci x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>기관마다 방향이 달라 <b>중재가 분절</b>됨</li>
+            <li><span class="ci x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>부모가 양쪽을 <b>직접 조율</b>해야 함</li>
             <li><span class="ci x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>이동·일정·비용 <b>부담이 두 배</b></li>
           </ul>
         </div>
         <div class="cmp-col cmp-us">
           <div class="cmp-head">검단ABA</div>
           <ul>
-            <li><span class="ci o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg></span>BCBA·1급 언어재활사 자격을 <b>한 사람이 동시 보유</b></li>
-            <li><span class="ci o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg></span>언어와 행동을 <b>하나의 시선</b>으로 통합 중재</li>
-            <li><span class="ci o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg></span>한 곳에서 <b>일관된 목표</b>로 체계적 관리</li>
-            <li><span class="ci o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg></span>이동·조율 부담 없이 <b>한 번에 해결</b></li>
+            <li><span class="ci o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg></span>BCBA·1급 자격 <b>한 사람이 동시 보유</b></li>
+            <li><span class="ci o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg></span>언어·행동을 <b>하나의 시선</b>으로 중재</li>
+            <li><span class="ci o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg></span><b>일관된 목표</b>로 체계적 관리</li>
+            <li><span class="ci o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg></span>이동·조율 없이 <b>한 번에 해결</b></li>
           </ul>
         </div>
       </div>
