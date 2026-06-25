@@ -125,7 +125,7 @@
   .parent-card .pa-ic { width:52px; height:52px; border-radius:14px; background:#fff; display:grid; place-items:center; margin-bottom:18px; box-shadow:0 4px 12px rgba(212,114,138,0.1); }
   .parent-card .pa-ic svg { color:var(--pink-deep); }
   .parent-card h3 { font-size:19px; color:var(--ink); margin-bottom:10px; }
-  .parent-card p { font-size:15px; color:var(--ink-soft); }
+  .parent-card p { font-size:15px; color:var(--ink-soft); line-height:1.6; word-break:keep-all; }
   .parent-quote { margin-top:32px; background:linear-gradient(135deg, var(--pink-deep), var(--pink)); color:#fff; border-radius:20px; padding:30px 34px; text-align:center; box-shadow:0 16px 40px rgba(212,114,138,0.26); }
   .parent-quote p { font-size:16.5px; font-family:'Jua'; line-height:1.6; }
   @media (max-width:860px){ .parent-grid{grid-template-columns:1fr;} }
@@ -168,7 +168,7 @@
   .sp-card:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(212,114,138,0.12); }
   .sp-ic { width:46px; height:46px; flex-shrink:0; border-radius:12px; background: var(--pink-soft); display:grid; place-items:center; font-size:22px; }
   .sp-card h4 { font-size:18px; color:var(--ink); margin-bottom:6px; font-family:'Jua'; }
-  .sp-card p { font-size:14.5px; color:var(--ink-soft); }
+  .sp-card p { font-size:14.5px; color:var(--ink-soft); line-height:1.6; word-break:keep-all; }
   .sp-card.full { grid-column: 1 / -1; }
 
 
@@ -241,7 +241,7 @@
   .cmp-normal li b { color:var(--ink); }
   .cmp-us li b { color:#fff; font-weight:800; }
   .whyus-note { margin-top:32px; text-align:center; font-size:18px; font-family:'Jua'; color:var(--pink-deep); line-height:1.6; }
-  @media (max-width:860px){ .compare{grid-template-columns:1fr;} }
+  @media (max-width:860px){ .compare{grid-template-columns:1fr;} .cmp-col{padding:26px 22px;} .cmp-col li{font-size:14.5px; line-height:1.5; word-break:keep-all; text-align:left;} }
 
   /* PROGRAMS */
   .prog-grid { margin-top: 44px; display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
@@ -249,7 +249,7 @@
   .prog-card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(212,114,138,0.14); }
   .prog-ic { width: 52px; height: 52px; border-radius: 14px; background: var(--pink-soft); display: grid; place-items: center; font-size: 24px; margin-bottom: 18px; }
   .prog-card h3 { font-size: 20px; color: var(--ink); margin-bottom: 10px; }
-  .prog-card p { font-size: 15px; color: var(--ink-soft); }
+  .prog-card p { font-size: 15px; color: var(--ink-soft); line-height:1.6; word-break:keep-all; }
 
   /* CLASS STRUCTURE */
   .classinfo { background:#fff; }
@@ -258,7 +258,7 @@
   .class-card h3 { font-size:20px; color:var(--ink); margin-bottom: 6px; display:flex; align-items:center; gap:10px; }
   .class-card .ct { font-size:14px; color:var(--pink-deep); margin-bottom:18px; }
   .class-card ul { list-style:none; display:flex; flex-direction:column; gap:10px; }
-  .class-card li { font-size:15px; color:var(--ink-soft); padding-left:22px; position:relative; }
+  .class-card li { font-size:15px; color:var(--ink-soft); padding-left:22px; position:relative; line-height:1.6; word-break:keep-all; }
   .class-card li::before { content:"·"; position:absolute; left:6px; color:var(--pink); font-weight:700; font-size:20px; top:-2px; }
   .time-pill { display:inline-block; background:var(--pink-soft); color:var(--pink-deep); border-radius:8px; padding:2px 10px; font-size:14px; margin: 2px 4px 2px 0; }
 
@@ -267,7 +267,7 @@
   .value-item { background:#fff; border-radius:18px; padding:26px 22px; border:1px solid var(--line); }
   .value-item .vi-num { font-family:'Jua'; color: var(--pink); font-size: 22px; }
   .value-item h4 { font-size: 17px; margin: 8px 0 6px; color: var(--ink); font-family:'Jua'; }
-  .value-item p { font-size: 14px; color: var(--ink-soft); }
+  .value-item p { font-size: 14px; color: var(--ink-soft); line-height:1.6; word-break:keep-all; }
 
   /* DIRECTOR */
   .director { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 46px; align-items: center; }
@@ -364,7 +364,7 @@
   .report-card { background:#fff; border:1px solid var(--line); border-radius:18px; padding:28px 26px; }
   .report-card h4 { font-size:17px; color:var(--ink); margin-bottom:14px; font-family:'Jua'; display:flex; align-items:center; gap:8px; }
   .report-card ul { list-style:none; display:flex; flex-direction:column; gap:9px; }
-  .report-card li { font-size:14.5px; color:var(--ink-soft); padding-left:16px; position:relative; }
+  .report-card li { font-size:14.5px; color:var(--ink-soft); padding-left:16px; position:relative; line-height:1.6; word-break:keep-all; }
   .report-card li::before { content:""; position:absolute; left:2px; top:9px; width:6px; height:6px; border-radius:50%; background:var(--pink); }
   .report-card li b { color:var(--ink); }
 
@@ -398,7 +398,7 @@
   .pm-item img { width:54px; height:40px; object-fit:contain; border-radius:6px; }
   .pm-item span { font-size:15px; font-weight:700; color:var(--ink); display:flex; flex-direction:column; }
   .pm-item small { font-size:12.5px; font-weight:400; color:var(--pink-deep); margin-top:2px; }
-  .trust-desc { font-size:14.5px; color:var(--ink-soft); margin-bottom:16px; }
+  .trust-desc { font-size:14.5px; color:var(--ink-soft); margin-bottom:16px; line-height:1.6; word-break:keep-all; }
   .report-mini { display:flex; flex-direction:column; gap:12px; }
   .rm-img { background:#fff; border:1px solid var(--line); border-radius:12px; padding:8px; }
   .rm-img img { width:100%; border-radius:8px; display:block; }
@@ -419,7 +419,7 @@
   .partner-card .pc-tag { display:inline-block; font-size:12px; padding:3px 10px; border-radius:999px; background:var(--pink); color:#fff; margin-bottom:12px; }
   .partner-card h4 { font-size:18px; color:var(--ink); margin-bottom:10px; font-family:'Jua'; }
   .partner-card ul { list-style:none; }
-  .partner-card li { font-size:14px; color:var(--ink-soft); padding-left:14px; position:relative; margin-bottom:5px; }
+  .partner-card li { font-size:14px; color:var(--ink-soft); padding-left:14px; position:relative; margin-bottom:5px; line-height:1.6; word-break:keep-all; }
   .partner-card li::before { content:"·"; position:absolute; left:3px; color:var(--pink); font-weight:700; }
 
   .pbs-band { margin-top:30px; background:linear-gradient(135deg, var(--pink-deep), var(--pink)); border-radius:22px; padding:34px 36px; color:#fff; box-shadow:0 18px 44px rgba(212,114,138,0.28); }
@@ -614,7 +614,7 @@
         <p class="sec-lead">전문성, 통합, 데이터. 아이를 위한 변화는 이 세 가지 위에서 만들어집니다.</p>
       </div>
       <div class="special-grid">
-        <div class="sp-card reveal"><div class="sp-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><h4>BCBA·1급 언어재활사 자격을 한 사람이 동시 보유</h4><p>드물게 두 자격을 모두 갖춘 센터장이 언어와 행동을 한 시선으로 보고, 모든 수업을 직접 설계·감독합니다.</p></div></div>
+        <div class="sp-card reveal"><div class="sp-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><h4>BCBA·1급 언어재활사 자격을 한 사람이 동시 보유</h4><p>두 자격을 모두 갖춘 전문가는 흔치 않습니다. 검단ABA 센터장은 언어와 행동을 한 시선으로 보고, 모든 수업을 직접 설계·감독합니다.</p></div></div>
         <div class="sp-card reveal"><div class="sp-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M4 7h3a1 1 0 0 0 1-1V5a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h1a2 2 0 0 1 0 4h-1a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-1a2 2 0 0 0-4 0v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a2 2 0 0 0 0-4H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/></svg></div><div><h4>언어·행동·사회성 통합 중재</h4><p>하나의 수업 안에서 모든 발달 영역을 통합적으로 접근합니다.</p></div></div>
         <div class="sp-card reveal"><div class="sp-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><div><h4>자격 기반 치료사 운영</h4><p>공식 자격 보유자 또는 코스 워크 이수자를 포함한 전문가만 수업에 참여합니다.</p></div></div>
         <div class="sp-card reveal"><div class="sp-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 4-5"/></svg></div><div><h4>과학적 평가 기반 수업 구성</h4><p>VB-MAPP, ELCAR 등 신뢰도 높은 평가 도구를 활용하여 개별화된 목표를 설정합니다.</p></div></div>
