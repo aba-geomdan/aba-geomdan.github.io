@@ -536,15 +536,15 @@
           font-weight:800; border:1.4px solid; }
 
 /* ── 4단계 ── */
-.sd-steps{ display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:14px; }
+.sd-steps{ display:grid; grid-template-columns:repeat(5,1fr); gap:7px; margin-top:14px; }
 .sys-demo .sd-step{
-  border:1px solid #F1E3E8 !important; border-radius:11px; padding:11px 11px 12px; background:#FDF8F9 !important;
+  border:1px solid #F1E3E8 !important; border-radius:11px; padding:11px 9px 12px; background:#FDF8F9 !important;
   opacity:.32; transform:translateY(5px);
   transition:opacity .45s, transform .45s, border-color .45s, background .45s;
 }
 .sys-demo .sd-step.on{ opacity:1; transform:none; border-color:#F5A0B1 !important; background:#FFF0F3 !important; }
-.sd-step b{ display:block; font-size:13px; color:var(--pkd); margin-bottom:3px; }
-.sd-step span{ display:block; font-size:11.5px; color:#7c7276; line-height:1.5; }
+.sd-step b{ display:block; font-size:12.5px; color:var(--pkd); margin-bottom:3px; }
+.sd-step span{ display:block; font-size:11px; color:#7c7276; line-height:1.5; }
 
 .sd-cap{ font-size:11.5px; color:#b6a9ad; margin-top:12px; text-align:right; }
 
@@ -735,7 +735,7 @@
       
       <div class="sys-band reveal">
         <b>이 모든 시스템을 <span class="sys-band-pk">검단ABA가 직접 만들었습니다</span></b>
-        <p>기록·분석·보고까지, 우리 아이에게 꼭 맞게 설계된 자체 개발 도구로 관리합니다. 실제로 어떻게 남는지 아래에서 확인하세요.</p>
+        <p>시중 프로그램을 쓰지 않습니다. 목표를 찾는 것부터 보고서까지 한 곳에서 이어지도록 센터가 직접 설계했습니다.</p>
       </div>
             <div class="sys-demo reveal" id="sysDemo">
   <div class="sd-tabs" id="sdTabs"></div>
@@ -750,10 +750,11 @@
   <div class="sd-learn" id="sdLearn"></div>
 
   <div class="sd-steps">
-    <div class="sd-step" data-i="1"><b>1. 데이터 기록</b><span>매 수업 아이의 반응을 즉시 기록합니다</span></div>
-    <div class="sd-step" data-i="2"><b>2. 자동 분석</b><span>숙달 여부를 자동으로 판단합니다</span></div>
-    <div class="sd-step" data-i="3"><b>3. 진행 추적</b><span>다음 단계로 목표를 올립니다</span></div>
-    <div class="sd-step" data-i="4"><b>4. 보고서 공유</b><span>정리된 기록을 보고서로 전해드립니다</span></div>
+    <div class="sd-step" data-i="1"><b>1. 목표 찾기</b><span>세 커리큘럼 통합 검색</span></div>
+    <div class="sd-step" data-i="2"><b>2. 데이터 기록</b><span>수업 중 실시간 입력</span></div>
+    <div class="sd-step" data-i="3"><b>3. 자동 판정</b><span>80% 2회 연속 = 숙달</span></div>
+    <div class="sd-step" data-i="4"><b>4. 자동 상향</b><span>다음 단계로 자동 이동</span></div>
+    <div class="sd-step" data-i="5"><b>5. 보고서 생성</b><span>쌓인 기록이 그대로 보고서로</span></div>
   </div>
 
   <div class="sd-cap">※ 이해를 돕기 위한 예시입니다. 실제 아동의 기록이 아닙니다.</div>
@@ -1360,7 +1361,7 @@
   var C = { r:"#EF4B57", o:"#E8A33D", y:"#D9B430", g:"#4CAF50", b:"#4A90D9" };
 
   var DATA = [
-    { tab:"혼자 겉옷 입기", title:"소근육을 활용한 자조기술", dom:"자조기술 · 단계별 지도",
+    { tab:"동작 모방", title:"간단한 동작 모방", dom:"언어행동기초 · 모방 · 단계별 지도",
       badge:{t:"진행중",c:"#4A90D9"}, type:"line", n:12,
       series:[ {c:C.r, pts:[[0,0],[1,0],[2,20],[3,60],[4,100],[5,100]]},
                {c:C.o, pts:[[3,0],[4,40],[5,80],[6,100],[7,100]]},
@@ -1370,9 +1371,9 @@
       marks:[{i:0,t:"L1",c:C.r},{i:3,t:"L2",c:C.o},{i:5,t:"L3",c:C.y},
              {i:7,t:"L4",c:C.g},{i:9,t:"L5",c:C.b}],
       dates:[[0,"6월"],[3,"6월말"],[5,"7월"],[7,"7월말"],[9,"8월"],[11,"8월말"]],
-      learn:[ {k:"L1",c:C.r,t:"양말 신기"}, {k:"L2",c:C.o,t:"단추 끼우기 (1개)"},
-              {k:"L3",c:C.y,t:"바지 입기"}, {k:"L4",c:C.g,t:"잠옷 입기"},
-              {k:"L5",c:C.b,t:"단추 끼우기 (2개)"} ] },
+      learn:[ {k:"L1",c:C.r,t:"잼잼 · 반짝반짝 손"}, {k:"L2",c:C.o,t:"박수 · 만세"},
+              {k:"L3",c:C.y,t:"깡총 · 나비"}, {k:"L4",c:C.g,t:"까꿍 · 볼 콕"},
+              {k:"L5",c:C.b,t:"예쁜 손 · 안경 손"} ] },
 
     { tab:"O·X 기록", title:"이름 부르면 쳐다보기", dom:"공동주의 · 회기당 1회 기회",
       badge:{t:"진행중",c:"#4A90D9"}, type:"ox",
@@ -1528,11 +1529,12 @@
     var total = d.type==='bar' ? drawBar(d) : d.type==='ox' ? drawOX(d) : drawLine(d);
 
     at(300,  function(){ steps[0].classList.add('on'); });
-    at(total*0.45, function(){ steps[1].classList.add('on');
+    at(total*0.30, function(){ steps[1].classList.add('on'); });
+    at(total*0.50, function(){ steps[2].classList.add('on');
       if(d.badge){ badge.textContent=d.badge.t; badge.style.background=d.badge.c; badge.classList.add('on'); } });
-    at(total*0.72, function(){ steps[2].classList.add('on'); });
+    at(total*0.75, function(){ steps[3].classList.add('on'); });
     at(total+400,  function(){
-      steps[3].classList.add('on');
+      steps[4].classList.add('on');
       [].forEach.call(learn.children,function(el){ el.classList.add('on'); });
     });
   }
