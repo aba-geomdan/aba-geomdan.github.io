@@ -430,7 +430,10 @@
   /* TEAM */
   .team-intro { background:#fff; border:1px solid var(--line); border-radius:18px; padding:24px 28px; margin-top:30px; font-size:15.5px; color:var(--ink-soft); }
   .team-intro b { color: var(--ink); }
-  .team-grid { margin-top: 26px; display:grid; grid-template-columns: repeat(3,1fr); gap:20px; }
+  .team-grid { margin-top: 26px; display:grid; grid-template-columns: repeat(3,1fr); gap:20px; align-items:start; }
+  .team-grid > .team-card:first-child { grid-column: 1 / -1; }
+  @media (min-width: 861px) { .team-grid > .team-card:first-child { display:grid; grid-template-columns: 1fr 1fr; column-gap:32px; align-items:start; } .team-grid > .team-card:first-child > :not(.tc-block) { grid-column: 1 / -1; justify-self:start; } .team-grid > .team-card:first-child > .tc-more { justify-self:stretch; } }
+  @media (min-width: 861px) { .team-grid > .team-card:first-child .tc-detail { columns: 2; column-gap: 32px; } .team-grid > .team-card:first-child .tc-detail .tc-block { break-inside: avoid; margin-top:0; padding-top:12px; } }
   .team-card { background:#fff; border:1px solid var(--line); border-radius:20px; padding:28px 24px; transition: transform .2s, box-shadow .2s; }
   .team-card:hover { transform: translateY(-4px); box-shadow:0 16px 36px rgba(212,114,138,0.14); }
   .team-card .tc-avatar { width:60px; height:60px; border-radius:50%; background:linear-gradient(135deg,var(--pink),var(--pink-deep)); display:grid; place-items:center; color:#fff; font-family:'Jua'; font-size:24px; margin-bottom:16px; }
@@ -899,10 +902,10 @@
       <div class="reveal">
         <div class="sec-eyebrow">Team</div>
         <h2 class="sec-title">전문가 팀 소개</h2>
-        <p class="sec-lead">언어와 행동, 두 분야를 모두 전문적으로 다루는 통합적 접근의 시작점입니다. 검단ABA의 모든 치료사는 응용행동분석을 <span style="white-space:nowrap;">전공한 전문가로 구성됩니다.</span></p>
+        <p class="sec-lead">언어와 행동, 두 분야를 모두 전문적으로 다루는 통합적 접근의 시작점입니다. 검단ABA의 모든 치료사는 응용행동분석을 기반으로 <span style="white-space:nowrap;">수업하는 전문가로 구성됩니다.</span></p>
       </div>
       <div class="team-intro reveal">
-        1급 언어재활사와 행동분석 전문가 <b>BCBA 자격을 동시에 보유한 센터장</b>이 센터 내 모든 수업을 관리·감독합니다. 본 센터의 모든 치료사는 <b>응용행동분석을 전공한 치료사</b>로 이루어져 있습니다.
+        1급 언어재활사와 행동분석 전문가 <b>BCBA 자격을 동시에 보유한 센터장</b>이 센터 내 모든 수업을 관리·감독합니다. 본 센터의 모든 치료사는 <b>응용행동분석을 기반으로 수업하는 치료사</b>로 이루어져 있습니다.
       </div>
       <div class="team-grid">
 
@@ -972,7 +975,7 @@
 
         <div class="team-card reveal">
           <div class="tc-avatar">최</div>
-          <h3>최성현 선생님</h3>
+          <h3>최○현 선생님</h3>
           <div class="tc-role">ABA 행동치료사</div>
           <div class="tc-block"><div class="tc-label">학력</div><ul class="tc-list">
             <li>백석대학교 교육대학원 교육학 석사 (응용행동분석)</li>
@@ -1016,7 +1019,7 @@
 
         <div class="team-card reveal">
           <div class="tc-avatar">김</div>
-          <h3>김은혜 선생님</h3>
+          <h3>김○혜 선생님</h3>
           <div class="tc-role">ABA 행동치료사</div>
           <div class="tc-block"><div class="tc-label">학력</div><ul class="tc-list">
             <li>숙명여자대학교 아동복지학부 졸업</li>
@@ -1046,6 +1049,31 @@
               <li>전) 강서 미즈메디 병원부설 아동발달센터 놀이심리상담</li>
               <li>전) 서울 음암초등학교 대안교실 집단 프로그램 교사</li>
               <li>전) 우리아이학습심리센터 행동치료사</li>
+            </ul></div>
+          </div>
+          <button class="tc-more">전체 이력 보기 &#9660;</button>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="tc-avatar">전</div>
+          <h3>전○원 선생님</h3>
+          <div class="tc-role">ABA 행동치료사</div>
+          <div class="tc-block"><div class="tc-label">학력</div><ul class="tc-list">
+            <li>한양대학교 일반대학원 아동심리치료학과 석사과정 재학</li>
+            <li>심리학 학사</li>
+          </ul></div>
+          <div class="tc-block"><div class="tc-label">주요 자격</div><ul class="tc-list">
+            <li>임상심리사 2급</li>
+            <li>QBA Coursework 이수 중</li>
+          </ul></div>
+          <div class="tc-detail">
+            <div class="tc-block"><div class="tc-label">그 외 자격증</div><ul class="tc-list">
+              <li>뇌상담사(뉴로피드백)</li>
+            </ul></div>
+            <div class="tc-block"><div class="tc-label">경력</div><ul class="tc-list">
+              <li>백석ABA센터 연구원</li>
+              <li>전) 메이플ABA 목동센터 ABA 행동치료사</li>
+              <li>전) 한양대학교 부설 한양아동가족심리건강센터 인턴</li>
             </ul></div>
           </div>
           <button class="tc-more">전체 이력 보기 &#9660;</button>
